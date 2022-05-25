@@ -10,7 +10,7 @@ class Helyjegy:
         self.ig = int(adatok[2])
         
 file1 = open("eladott.txt", "r")
-osszesEredmeny: list[Helyjegy] = []
+osszesEredmeny:  list[Helyjegy] = []
 file1.readline()
 for sor in file1:
     egyEredmeny = Helyjegy(sor.strip())
